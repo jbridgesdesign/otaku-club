@@ -1,0 +1,252 @@
+/* style.css - Club Home Page Example
+/* Author: J. Bridges Design - https://www.jbridgesdesign.com
+/* Last Updated: March 4, 2026
+
+/* 1. Global Styles */
+/* 2. Header */
+/* 3. Intro Section */
+/* 4. Summary Section */
+/* 5. Photos Section */
+/* 6. Quote Section */
+/* 7. Meetup Section */
+/* 8. Footer */
+/* 9. Media Queries */
+
+/* 1. Global Styles */
+
+html {
+    font-size: 16px;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+  margin: 0;
+  background-color: #efe8d8;
+  color: #111;
+}
+
+/* 2. Header */
+
+#navbar {
+  padding: 1rem 0;
+  background-color: #316467;
+  color: #efe8d8;
+}
+
+#navbar ul {
+  list-style: none;
+  margin: 0;
+}
+
+#navbar li {
+  padding: 0.5rem 1.5rem;
+  margin-right: 1.5rem;
+  display: inline-block;
+}
+
+#navbar p {
+  left: 25rem;
+}
+
+#navbar li a {
+    color: #ffff00;
+    text-decoration: none;
+}
+
+#navbar li a:hover {
+    color: #efe8d8;
+} 
+
+/* 3. Intro Section */
+
+#intro {
+  height: 30rem;
+  padding-top: 1rem;
+  background-image: url("../images/wp4474569-characters-wallpapers.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #95392b;
+  border-bottom: 0.6rem solid #95392b;
+}
+
+#intro h1 {
+  color: #ffff00;
+  font-size: 2rem;
+  margin-top: 0.5rem;
+  padding: 2rem;
+  background-color: #95392b;
+  text-align: center;
+}
+
+/* 4. Summary Section */
+
+#summary {
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+#summary h2 {
+  color: #95392b;
+}
+
+#summary p {
+  color: #111;
+}
+
+#summary a {
+  color: #95392b;
+}
+
+#summary a:hover {
+  color: #316467;
+}
+
+/* 5. Photos Section */
+
+#photos {
+  margin: 0 auto 1rem auto;
+  padding: 0;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  display: flex;
+}
+
+#photos figure {
+  margin: 0;
+  padding: 1rem;
+  width: 30%;}
+
+#photos figure img {
+  width: 100%;
+}
+
+#photos figure figcaption {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #111;
+}
+
+/* 6. Quote Section */
+
+#quote {
+  background-color: #316467;
+  height: 14rem;
+  padding: 0 1rem;
+  padding-top: 1rem;
+  color: #ffff00;
+  font-style: italic;
+}
+
+#quote h1 {
+  font-size: 2.5rem;
+  color: #ffff00;
+  padding-left: 1.5rem;
+}
+
+#quote p {
+  padding-left: 1.5rem;
+}
+
+/* 7. Meetup Section */
+
+#meetup {
+  margin-bottom: 2rem;
+}
+
+#meetup img {
+  width: 50%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+#meetup h1 {
+  color: #95392b;
+  text-align: center;
+}
+
+/* 8. Footer */
+
+footer {
+  background-color: #95392b;
+  color: #efe8d8;
+  text-align: center;
+  padding: 1rem;
+  height: 12rem;
+}
+
+footer a {
+  color: #ffff00;
+}
+
+footer a:hover {
+  color: #efe8d8;
+}
+
+#footernav {
+  padding: 0;
+}
+
+#footernav ul {
+  list-style: none;
+  padding-bottom: 4rem;
+}
+
+#footernav li {
+  padding: 0.5rem 0;
+  margin-right: 1.5rem;
+  display: inline-block;
+}
+
+#footernav li a {
+    color: #ffff00;
+    text-decoration: none;
+}
+
+#footernav li a:hover {
+    color: #efe8d8;
+} 
+
+/* 9. Media Queries */
+
+@media only screen and (max-width: 1048px) {
+
+  #photos img {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+
+  #intro h1 {
+    margin-top: 2rem;
+  }
+
+  #intro {
+    max-height: 200px;
+  }
+
+  #photos img {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  li {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+
+  #quote h1 {
+    font-size: 2rem;
+  }
+
+  #photos img {
+    width: 100%;
+  }
+}
