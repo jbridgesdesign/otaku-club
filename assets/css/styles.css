@@ -83,7 +83,7 @@ body {
 /* 4. Summary Section */
 
 #summary {
-  padding: 0 1rem;
+  padding: 0 2rem;
   margin: 0 auto;
 }
 
@@ -142,10 +142,12 @@ body {
   font-size: 2.5rem;
   color: #ffff00;
   padding-left: 1.5rem;
+  text-align: center;
 }
 
 #quote p {
   padding-left: 1.5rem;
+  text-align: center;
 }
 
 /* 7. Meetup Section */
@@ -219,6 +221,13 @@ footer a:hover {
   }
 }
 
+@media only screen and (max-width: 800px) {
+  #navbar li {
+    padding: 0.5rem 0.75rem;
+    margin-right: 0.5rem;
+  }
+}
+
 @media only screen and (max-width: 640px) {
 
   #intro h1 {
@@ -238,6 +247,13 @@ footer a:hover {
   li {
     display: block;
     text-align: center;
+  }
+
+  #navbar li {
+    display: inline-block;
+    padding: 0.5rem 0.4rem;
+    margin-right: 0;
+    font-size: 0.8rem;
   }
 }
 
